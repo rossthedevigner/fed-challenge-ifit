@@ -3,12 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-plugin-styled-components": "^1.10.7",
+    "fastclick": "^1.0.6",
+    "framer-motion": "^1.11.1",
+    "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
+    "rebass": "^4.0.7",
+    "styled-breakpoints": "^8.1.1",
+    "styled-components": "^5.1.1",
+    "styled-normalize": "^8.0.7",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,6 +33,12 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "browserslist": {
     "production": [
