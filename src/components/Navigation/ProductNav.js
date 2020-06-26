@@ -7,7 +7,6 @@ const ProductNavContainer = styled.div`
   position: relative;
   height: 2.875rem;
   border-bottom: 0.0625rem solid ${(props) => props.theme.colors.softGrey};
-  }
 `;
 
 const ProductNavItems = styled.ul`
