@@ -25,7 +25,7 @@ The project includes the following completed items:
 - [x] "Workout Series" grid fades in when the user scrolls down, has individual card hover animation
 - [x] Equipment grid fades in when the user scrolls down, has individual card hover animation
 - [x] Language selection based on several language options, set globally across the app
-- [ ] Used an open source slider for the reviews section
+- [x] Used an open source slider for the reviews section
 
 
 
