@@ -9,18 +9,19 @@ const HeaderContainer = styled.div`
   width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   background-color: ${(props) => props.theme.colors.white};
   z-index: 100;
   transition: transform 0.28s ease-out;
-  transform: translateY(0);
 
   &.hide {
     transition-timing-function: ease-in;
-    transform: translateY(-101%);
+    transform: translate3d(0, -101%, 0);
   }
 `;
 
 const Header = ({ isNavSticky }) => {
+  console.log(isNavSticky);
   return (
     <HeaderContainer className={`${!isNavSticky ? 'hide' : ''}`}>
       <ProductNav />

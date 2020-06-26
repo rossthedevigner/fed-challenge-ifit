@@ -82,11 +82,15 @@ const SocialLinkItem = styled.li`
   position: relative;
   height: 2.5rem;
   width: 2.5rem;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   padding: 0;
   z-index: 1;
 
-  ::after {
+  @media ${(props) => props.theme.breakpoints.medium} {
+    margin: 0 1rem;
+  }
+
+  &::after {
     content: '';
     position: absolute;
     background: linear-gradient(140deg, #0069d2, #28e1a5);

@@ -115,6 +115,7 @@ const MobileNavWrapper = styled.div`
 
 const MobileButtonSignUp = styled(ButtonSignUp)`
   align-self: stretch;
+  position: relative;
   margin-bottom: 2.5rem;
 `;
 

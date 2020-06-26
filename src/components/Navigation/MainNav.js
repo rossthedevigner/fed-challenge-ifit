@@ -11,11 +11,15 @@ const MainNavContainer = styled.div`
   flex-direction: row;
   position: relative;
   height: 4.5rem;
-  padding: 0.625rem 1.5rem 0.625rem 2.5rem;
+  padding: 0.625rem 1.5rem 0.625rem 1rem;
   box-shadow: 0 0.063rem 0.125rem rgba(46, 49, 52, 0.4);
   background-color: rgb(255, 255, 255);
   justify-content: space-between;
   align-items: center;
+
+  @media ${(props) => props.theme.breakpoints.medium} {
+    padding: 0.625rem 1.5rem 0.625rem 2.5rem;
+  }
 
   & .mobile-view {
     align-items: flex-start;
@@ -35,7 +39,8 @@ const MainMenuList = styled.ul`
   &.mobile-view {
     flex-direction: column;
     display: flex;
-    flex: 0 1;
+    flex: 1;
+    justify-content: flex-start;
     margin: 0;
   }
 
